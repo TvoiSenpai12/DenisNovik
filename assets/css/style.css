@@ -1,0 +1,327 @@
+/* ---START Сonnecting standards--- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+}
+
+a {
+    text-decoration: none;
+}
+/* ---STOP Сonnecting standards--- */
+
+
+/* ---START HEADER--- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: solid 1px #828282;
+}
+
+.burger-menu {
+    display: none;
+}
+
+nav a {
+    font-weight: bold;
+    color: #828282;
+    font-size: 18px;
+}
+
+.active {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* ---STOP HEADER--- */
+
+
+/* ---START MAIN--- */
+/* ___START Brand and image___  */
+
+.brand-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 50%;
+}
+
+.brand h1 {
+    font-weight: bold;
+    font-size: 47px;
+}
+
+.prof-info {
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    transform:rotate(270deg);
+}
+
+.prof-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 105px;
+    max-width: 943px;
+    width: 50%;
+}
+
+.prof-img img {
+    width: 100%;
+}
+
+/* ___STOP Brand and image___  */
+/* ___START About me___ */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 71px;
+    background: linear-gradient(180deg, #BD8CC9 0%, rgba(249, 202, 238, 0) 100%);
+    background-color: #F6F6F6;
+    background-position: 100% -1000px;
+    transition: background 1s ease;
+    background-repeat: no-repeat;
+}
+
+.about-me:hover {
+    background-position: 0 0;
+}
+
+.about-title h2 {
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-text p {
+    margin-bottom: 25px;;
+}
+
+/* ___STOP About me___ */
+/* ___START Skills___ */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    margin-top: 127px;
+    margin-bottom: 110px;
+}
+
+.skills h2 {
+    font-weight: bold;
+    margin-bottom: 65px;
+    font-size: 34px;
+}
+
+.skills-text {
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-program {
+    padding:0 45px;
+}
+
+.name-program {
+    margin-top: 20px;
+    height: 60px;
+}
+
+.prog-stars img{
+    padding: 0 8px;
+}
+
+.stars-active {
+    animation: moving 1s infinite;
+}
+
+@keyframes moving {
+    100% {
+    transform: scaleX(-1);
+}
+}
+
+/* ___STOP Skills___ */
+/* ___START Portfolio___ */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.portfolio h2 {
+    padding-top: 110px;
+    margin-bottom: 45px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-link {
+    color: #000;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.portfolio-item img {
+    max-width: 835px;
+    transition: 1s;
+}
+
+.portfolio-item img:hover {
+    max-width: 935px;
+    transition: 1s;
+}
+
+
+/* ___STOP Portfolio___ */
+/* ---STOP MAIN--- */
+
+
+/* ---START FOOTER--- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+
+footer h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contacts-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contacts-btn button {
+    transition: 1s;
+    background-color: #000;
+    color: #fff;
+    padding: 13px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.icons a {
+    margin:0 30px;
+}
+
+.contacts-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #828282;
+}
+
+.social-icon {
+    height: 48px;
+    width: 48px;
+    display: block;
+    transition: 1s;
+}
+
+.telegram {
+    background: url('/assets/img/Telegram.png');
+}
+
+.telegram:hover {
+    background: url('/assets/img/Telegram_active.png');
+}
+
+.figma {
+    background: url('/assets/img/Figma.png');
+}
+
+.figma:hover {
+    background: url('/assets/img/Figma_active.png');
+}
+
+.youtube {
+    background: url('/assets/img/YouTube.png');
+}
+
+.youtube:hover {
+    background: url('/assets/img/YouTube_active.png');
+}
+
+.instagram {
+    background: url('/assets/img/Instagram.png');
+}
+
+.instagram:hover {
+    background: url('/assets/img/Instagram_active.png');
+}
+
+/* ---STOP FOOTER--- */

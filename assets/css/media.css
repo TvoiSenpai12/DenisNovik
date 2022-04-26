@@ -1,0 +1,51 @@
+@media (max-width: 675px) {
+    nav {
+        display: none;
+        border: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .brand-info {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .brand {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        /* padding-right: 30px; */
+    }
+
+    .burger-menu {
+        padding-top: 10px;
+        display: block;
+    }
+
+    .language {
+        display: none;
+    }
+
+    .brand-info {
+        width: 75%;
+    }
+
+    .prof-img {
+        width: 80%;
+    }
+    
+    .card-program {
+        padding:80px 45px;
+    }
+
+    .icons a {
+        margin:0 20px;
+    }
+
+    .contacts-btn button {
+        padding: 13px 95px;
+    }
+    
+}
